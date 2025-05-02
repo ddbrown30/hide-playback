@@ -4,16 +4,11 @@
 }
 
 /* Hides the current song name */
-#currently-playing .playlist-sounds .sound > .sound-name {
+.currently-playing .playlist-sounds .sound > header {
     display: var(--soundNameDisplay);
 }
 
-/* Hides the stop button */
-#currently-playing .playlist-sounds .sound > .sound-controls {
-    display: var(--soundControlDisplay);
-}
-
 /* Hides the pause button */
-#currently-playing .playlist-sounds .sound > .sound-playback > .sound-control {
+.currently-playing .playlist-sounds .sound > .sound-playback > .sound-control {
     display: var(--soundControlDisplay);
 }

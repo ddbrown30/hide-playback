@@ -7,6 +7,9 @@ Hooks.once('ready', async function () {
 
 Hooks.on("renderPlaylistDirectory", (app, html, data) => {
     if (!game.user.isGM) {
-        html.find("ol.directory-list").empty();
+        let directoryList = html.querySelector("ol.directory-list");
+        while (directoryList.firstChild) {
+            directoryList.removeChild(directoryList.firstChild);
+        }
     }
 });
